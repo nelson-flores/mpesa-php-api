@@ -8,20 +8,20 @@ Target version of M-Pesa API: **v1x**
 
 Install using composer:
 ```
-composer require abdulmueid/mpesa
+composer require nelson-flores/mpesa
 ```
 
 ## Usage
 
 1. Load the configuration from file.
     ```php
-    $config = \abdulmueid\mpesa\Config::loadFromFile('/path/to/config.php');
+    $config = \Flores\mpesa\Config::loadFromFile('/path/to/config.php');
     ```
     See sample configuration file in examples folder.
 
 2. Create a Transaction using the configuration.
     ```php
-    $transaction = new \abdulmueid\mpesa\Transaction($config);
+    $transaction = new \Flores\mpesa\Transaction($config);
     ```
     
 3. Execute API operations and pass appropriate parameters. 

@@ -6,16 +6,16 @@
  * @copyright   Copyright (c) Abdul Mueid akhtar
  * @license     http://mit-license.org/
  *
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
-namespace abdulmueid\mpesa;
+namespace Flores\mpesa;
 
-use abdulmueid\mpesa\interfaces\TransactionResponseInterface;
+use Flores\mpesa\interfaces\TransactionResponseInterface;
 
 /**
  * Class TransactionResponse
- * @package abdulmueid\mpesa
+ * @package Flores\mpesa
  */
 class TransactionResponse implements TransactionResponseInterface
 {

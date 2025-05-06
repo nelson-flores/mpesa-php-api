@@ -6,16 +6,16 @@
  * @copyright   Copyright (c) Kishan Nareshpal Jadav
  *
  * @license     http://mit-license.org/
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
-namespace abdulmueid\mpesa\helpers;
+namespace Flores\mpesa\helpers;
 
 use Exception;
 
 /**
  * Class ValidationHelper
- * @package abdulmueid\mpesa\helpers
+ * @package Flores\mpesa\helpers
  */
 class ValidationHelper
 {

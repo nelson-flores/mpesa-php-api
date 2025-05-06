@@ -4,10 +4,10 @@
  * @copyright   Copyright (c) Abdul Mueid akhtar
  * @license     http://mit-license.org/
  *
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
-use abdulmueid\mpesa\helpers\ValidationHelper;
+use Flores\mpesa\helpers\ValidationHelper;
 use PHPUnit\Framework\TestCase;
 
 class ValidationTest extends TestCase

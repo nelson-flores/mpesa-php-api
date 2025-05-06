@@ -4,7 +4,7 @@
  * @copyright   Copyright (c) Abdul Mueid akhtar
  * @license     http://mit-license.org/
  *
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
 return [

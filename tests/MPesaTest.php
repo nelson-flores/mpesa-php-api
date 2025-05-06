@@ -4,16 +4,16 @@
  * @copyright   Copyright (c) Abdul Mueid akhtar
  * @license     http://mit-license.org/
  *
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
-use abdulmueid\mpesa\Config;
-use abdulmueid\mpesa\interfaces\TransactionResponseInterface;
+use Flores\mpesa\Config;
+use Flores\mpesa\interfaces\TransactionResponseInterface;
 
 class MPesaTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @var \abdulmueid\mpesa\interfaces\TransactionInterface
+     * @var \Flores\mpesa\interfaces\TransactionInterface
      */
     private $transaction;
 
@@ -46,7 +46,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
             bin2hex(random_bytes(6))
         );
         $this->assertInstanceOf(
-            \abdulmueid\mpesa\TransactionResponse::class,
+            \Flores\mpesa\TransactionResponse::class,
             $payment
         );
         $this->assertNotEmpty($payment->getResponse());
@@ -73,7 +73,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
             bin2hex(random_bytes(6))
         );
         $this->assertInstanceOf(
-            \abdulmueid\mpesa\TransactionResponse::class,
+            \Flores\mpesa\TransactionResponse::class,
             $payment
         );
         $this->assertNotEmpty($payment->getResponse());
@@ -100,7 +100,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
             bin2hex(random_bytes(6))
         );
         $this->assertInstanceOf(
-            \abdulmueid\mpesa\TransactionResponse::class,
+            \Flores\mpesa\TransactionResponse::class,
             $payment
         );
         $this->assertNotEmpty($payment->getResponse());
@@ -127,7 +127,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
             bin2hex(random_bytes(6))
         );
         $this->assertInstanceOf(
-            \abdulmueid\mpesa\TransactionResponse::class,
+            \Flores\mpesa\TransactionResponse::class,
             $refund
         );
         $this->assertNotEmpty($refund->getResponse());
@@ -152,7 +152,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
             bin2hex(random_bytes(6))
         );
         $this->assertInstanceOf(
-            \abdulmueid\mpesa\TransactionResponse::class,
+            \Flores\mpesa\TransactionResponse::class,
             $query
         );
         $this->assertNotEmpty($query->getResponse());
@@ -167,7 +167,7 @@ class MPesaTest extends \PHPUnit\Framework\TestCase
     protected function setUp(): void
     {
         $config = Config::loadFromFile(__DIR__ . '/config.test.php');
-        $this->transaction = new \abdulmueid\mpesa\Transaction($config);
+        $this->transaction = new \Flores\mpesa\Transaction($config);
         $this->amount = 1;
         $this->msisdn = getenv('MPESA_CUSTOMER_MSISDN'); // Full MSISDN i.e. 258840000000
         $this->b2b_receiver = getenv('MPESA_B2B_RECEIVER');

@@ -6,20 +6,20 @@
  * @copyright   Copyright (c) Abdul Mueid akhtar
  * @license     http://mit-license.org/
  *
- * @link        https://github.com/abdulmueid/mpesa-php-api
+ * @link        https://github.com/nelson-flores/mpesa-php-api
  */
 
-namespace abdulmueid\mpesa;
+namespace Flores\mpesa;
 
-use abdulmueid\mpesa\helpers\ValidationHelper;
-use abdulmueid\mpesa\interfaces\ConfigInterface;
-use abdulmueid\mpesa\interfaces\TransactionInterface;
-use abdulmueid\mpesa\interfaces\TransactionResponseInterface;
+use Flores\mpesa\helpers\ValidationHelper;
+use Flores\mpesa\interfaces\ConfigInterface;
+use Flores\mpesa\interfaces\TransactionInterface;
+use Flores\mpesa\interfaces\TransactionResponseInterface;
 use Exception;
 
 /**
  * Class Transaction
- * @package abdulmueid\mpesa
+ * @package Flores\mpesa
  */
 class Transaction implements TransactionInterface
 {
